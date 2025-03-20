@@ -1,0 +1,246 @@
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto; /* Permite rolagem apenas vertical */
+    width: 400px; /* Ajuste conforme necessário */
+}
+
+/* Estilização da barra de rolagem */
+dialog::-webkit-scrollbar {
+    width: 8px; /* Largura da barra */
+}
+
+dialog::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo da barra */
+    border-radius: 10px;
+}
+
+dialog::-webkit-scrollbar-thumb {
+    background: #007BFF; /* Cor da barra */
+    border-radius: 10px;
+}
+
+dialog::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Cor ao passar o mouse */
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog img {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.modal-close img {
+    width: 30px;
+    height: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #141414;
+}
+
+input[type="text"], 
+input[type="date"], 
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #141414;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-dark {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #141414;
+    transition: all 0.3s ease-in-out;
+}
+
+/* MODAL2 */
+.dialog2 {
+    position: fixed;
+    top: 48%;
+    left: 71%;
+    transform: translateY(-50%);
+    padding: 0px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    max-width: 280px;
+    max-height: 90%;
+    width: 280px;
+    overflow: hidden;
+}
+
+.dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* MODAL CHAT */
+.caixa-chat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Cabeçalho do chat */
+.header-caixa-chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: -50px;
+}
+
+.header-caixa-chat img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Botão de fechar */
+.modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: -10px;
+    
+}
+
+.modal-close img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Área de mensagens */
+.mensagens {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    margin-top: 10px;
+}
+
+/* Mensagem padrão */
+.mensagens p {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* Mensagem enviada pelo usuário */
+.mensagens .resposta {
+    align-self: flex-end;
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Mensagem recebida */
+.mensagens p:not(.resposta) {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Campo de entrada e botão */
+.input-chat {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    align-items: center;
+}
+
+.input-chat input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.input-chat button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.input-chat button:hover {
+    background-color: #0056b3;
+}
+
+

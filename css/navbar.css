@@ -1,0 +1,84 @@
+header{
+    background: linear-gradient(135deg, #122D72 0%, #1B43AA 50%, #2255D8 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    margin-top: 5px;
+    margin-left: 10px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 98%;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 120px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.container-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container-links li a:hover{
+    border-radius: 15px;
+    background-color: #fff;
+    color: #122D72;
+    padding: 5px 8px;
+    transition: 0.5s;
+
+}
+
+
+.container-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+.caixa-mensagem{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Foto-Perfil{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}   
+
+

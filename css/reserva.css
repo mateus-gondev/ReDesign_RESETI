@@ -1,0 +1,117 @@
+.container-reservas {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+    height: 80vh; 
+    padding-top: 80px; 
+}
+
+/*MEU BUTTON E BUSCA*/
+.container-inicio {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    flex-direction: row;
+    width: 90%;
+    height: 10vh; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.container-btn-reserva{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+}
+
+.container-btn-reserva button{
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.container-btn-reserva button:hover{
+    background-color: #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.container-busca{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    position: relative;
+}
+
+.container-busca .input-busca{
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-busca .input-busca:hover{
+    background-color: #0056b3; 
+}
+
+.container-busca img{
+    position: absolute;
+    right: 10px; 
+    width: 16px; 
+    height: 16px;
+    cursor: pointer;
+}
+
+/*MINHA TABELA*/
+.table {
+    width: 90%; 
+    max-width: 2000px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.status-recebido {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.status-nao-devolvido {
+    background-color: #0056b3; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.status-recebido:hover {
+    background-color: #0056b3; 
+}
+
+.status-nao-devolvido:hover {
+    background-color: #007bff; 
+}
