@@ -1,0 +1,59 @@
+/* Estilização geral */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.container-carinho {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Título do carrinho */
+.carinho-text p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Container dos notebooks */
+.container-notebooks {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botões de seleção */
+.btn {
+    display: inline-block;
+    width: 48%;
+    margin: 2px 1%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* Estilos dos botões normais */
+.btn-outline-primary {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos dos botões azuis */
+input:checked + .btn-outline-primary {
+    background-color: #1e50ff;
+    color: white;
+}
