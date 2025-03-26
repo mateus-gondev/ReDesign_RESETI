@@ -10,8 +10,8 @@ dialog {
     border: none;
     max-width: 90%;
     max-height: 90%;
-    overflow-y: auto; /* Permite rolagem apenas vertical */
-    width: 400px; /* Ajuste conforme necessário */
+    overflow-y: auto; 
+    width: 400px; 
 }
 
 /* Estilização da barra de rolagem */
@@ -133,7 +133,7 @@ button {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* MODAL CHAT */
+/*- MODAL CHAT-------------------------------------------------- */
 .caixa-chat {
     display: flex;
     flex-direction: column;
@@ -143,6 +143,7 @@ button {
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+
 }
 
 /* Cabeçalho do chat */

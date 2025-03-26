@@ -1,59 +1,143 @@
-/* Estilização geral */
-body {
+.container-todo-carinho{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-/* Container principal */
+.carinho-text p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .container-carinho {
-    background-color: #212121;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px; 
+    padding: 20px;
+    box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.861);
+    background-color: #ffffff;
+    width: 17%;
+    height: 20%;
+    margin-top: 100px;
+    border-radius: 15px;
+    border: #1D1D20 solid 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+    margin-bottom: 50px;
 }
 
-/* Título do carrinho */
-.carinho-text p {
+.container-notebooks .linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 5px;
+}
+
+.assento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+}
+
+.btn-check {
+    display: none;
+    gap: 5px;
+}
+
+.btn-outline-primary {
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 45px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/*CARDS DESCRITIVO*/
+.container-card-descricao {
+    background-color: #111; 
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px; 
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 250px;
+    margin-left: 10px;
+    margin-right: -280px;
+    margin-top: 10px;
+}
+
+.card-text p {
     font-size: 16px;
     font-weight: bold;
-    margin: 0;
+    margin-bottom: 15px;
 }
 
-/* Container dos notebooks */
-.container-notebooks {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
 }
 
-/* Botões de seleção */
-.btn {
-    display: inline-block;
-    width: 48%;
-    margin: 2px 1%;
-    padding: 10px 0;
-    text-align: center;
-    border-radius: 5px;
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cards img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.cards img[alt="notebook-azul"] {
+    background-color: #1E50FF;
+}
+
+.cards img[alt="notebook"] {
+    background-color: #333; 
+}
+
+.cards p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.container-buton-card {
+    margin-top: 15px;
+}
+
+.container-buton-card .btn {
+    background-color: #007bff;
+    border-radius: 25px;
+    padding: 8px 8px;
+    font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
     border: none;
+    width: 75%;
+    transition: 0.3s;
 }
 
-/* Estilos dos botões normais */
-.btn-outline-primary {
-    background-color: black;
-    color: white;
+.container-buton-card .btn:hover {
+    background-color: #0056b3;
 }
 
-/* Estilos dos botões azuis */
-input:checked + .btn-outline-primary {
-    background-color: #1e50ff;
-    color: white;
-}

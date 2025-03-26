@@ -66,6 +66,10 @@
     transition: background-color 0.3s ease;
 }
 
+.input-busca::placeholder{
+    color: white;
+}
+
 .container-busca .input-busca:hover{
     background-color: #0056b3; 
 }
