@@ -113,11 +113,11 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-/* MODAL2 */
+/*- MODAL MODAL 2-------------------------------------------------- */
 .dialog2 {
     position: fixed;
-    top: 48%;
-    left: 71%;
+    top: 38%;
+    left: 75%;
     transform: translateY(-50%);
     padding: 0px;
     border-radius: 12px;
@@ -244,4 +244,98 @@ button {
     background-color: #0056b3;
 }
 
+/*MEU TERCEIRO MODAL---------------------------------------------------------------------*/
+.dialog3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 230px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 1%;
+    position: fixed;
+    top: 20%;
+    left: 90%;
+}
 
+.caixa-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-perfil p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.caixa-perfil .text-perfil{
+    color: #141414;
+    margin-right: 140px;
+    margin-top: 8px;
+    margin-bottom: -5px;
+}
+
+.caixa-perfil .text-troca{
+    font-size: 15px;
+    color: #141414;
+    margin-left: -10px;
+    margin-top: 8px;
+}
+
+.container-troca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: -8px;
+    margin-top: 5px;
+}
+
+.container-troca button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.container-troca button:hover {
+    background-color: #0056b3;
+}
+
+.container-sair {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    margin-right: 120px;
+}
+
+.container-sair img {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.container-sair a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 17px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.container-sair a:hover {
+    text-decoration: underline;
+}

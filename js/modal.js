@@ -1,28 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const btnAbrirModal = document.querySelector(".btn-reserva");
-    const modal = document.querySelector("#modal-1");
-    const btnFecharModal = document.querySelector(".modal-close");
-
-    if (btnAbrirModal && modal && btnFecharModal) {
-        btnAbrirModal.addEventListener("click", () => {
-            modal.showModal(); // Abre o modal
-        });
-
-        btnFecharModal.addEventListener("click", () => {
-            modal.close(); // Fecha o modal
-        });
-
-        // Fecha o modal se o usuário clicar fora dele
-        modal.addEventListener("click", (event) => {
-            if (event.target === modal) {
-                modal.close();
-            }
-        });
-    }
-});
-
-/*MEU SEGUNDO MODAL*/
-document.addEventListener("DOMContentLoaded", function () {
     // Função para abrir o modal
     function abrirModal(modalId) {
         const modal = document.getElementById(modalId);
@@ -48,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
         abrirModal("modal-2");
     });
 
+    // Evento para abrir o Modal de Perfil (modal-3)
+    document.querySelector(".Foto-Perfil").addEventListener("click", function () {
+        abrirModal("modal-3");
+    });
+
     // Adiciona evento de fechar modal em todos os botões de fechar
     document.querySelectorAll(".modal-close").forEach((botao) => {
         botao.addEventListener("click", function () {
@@ -55,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
             fecharModal(modal);
         });
     });
-
     // Fecha o modal ao clicar fora dele
     document.querySelectorAll("dialog").forEach((modal) => {
         modal.addEventListener("click", function (event) {
@@ -65,4 +45,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
 
