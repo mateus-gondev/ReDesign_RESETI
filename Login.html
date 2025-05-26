@@ -1,51 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Reseti</title>
-    <link rel="stylesheet" href="css/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Reseti</title>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    
 
 <div class="container-login">
+    <form class="container-form">
 
     <div class="container-logo">
-        <img src="assets/img/Logo3.png" alt="logo">
-        <p>Realize seu Login</p>
+        <img class="img_logo" src="assets/img/Logo3.png" alt="Logo Reseti">
+        <p class="p_titulo">Realize seu Login</p>
     </div>
 
-    <form class="container-form">
-        <div class="container-user">
-            <p class="text-user">Usuário</p>
-            <div class="container-input">
-                <img class="icon-user" src="assets/icons/iconUser.png" alt="user">
-                <input type="text" placeholder="Usuário">
-            </div>
+    <div class="container-box">
+        <label class="text-user" for="usuario">USUÁRIO</label>
+        <div class="container-input">
+            <img class="icon-user" src="assets/icons/user.png" alt="Ícone usuário">
+            <input id="usuario" type="text" placeholder="Usuário" required>
         </div>
+    </div>
 
-        <div class="container-password">
-            <p class="text-password">Senha</p>
-            <div class="container-input">
-                <img class="icon-password" src="assets/icons/iconPassword.png" alt="password">
-                <input type="password" placeholder="Senha">
-            </div>
-            <a href="#">Esqueceu sua senha?</a>
+    <div class="container-box">
+        <label class="text-password" for="senha">SENHA</label>
+        <div class="container-input">
+            <img class="icon-password" src="assets/icons/cadeado.png" alt="Ícone senha">
+            <input id="senha" type="password" placeholder="Senha" required>
+            <img class="icon-eye" src="assets/icons/ocultar.png" alt="Mostrar senha">
         </div>
+        <a class="link-esqueci-senha" href="RecuperarSenha.html">Esqueceu sua senha?</a>
+    </div>
 
-        <div class="container-btn-login">
-            <button type="submit" class="btn-login">Entrar</button>
-            <p>Não possui cadastro? <a href="#">Cadastre-se</a></p>
-        </div>
-    
+    <div class="container-btn-login">
+        <button type="submit" class="btn-login">ENTRAR</button>
+        <p>Não possui cadastro? <a class="link" href="Cadastro.html">Cadastre-se</a></p>
+    </div>
+
     </form>
-
-
 </div>
 
-
-
-
 </body>
+
+<script>
+
+document.querySelector('.icon-eye').addEventListener('click', function() {
+    const passwordInput = document.getElementById('senha');
+    const icon = this;
+
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.src = 'assets/icons/Mostrar.png'; // Ícone para mostrar senha
+    } else {
+        passwordInput.type = 'password';
+        icon.src = 'assets/icons/ocultar.png'; // Ícone para ocultar senha
+    }
+});
+
+</script>
+
+
+
+
+
 </html>

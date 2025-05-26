@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - RESETI</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+<body>
+
+    <div class="container-login">
+        <form class="container-form">
+            <div class="container-logo">
+                <img src="assets/img/Logo3.png" alt="Logo RESETI">
+                <h2 class="p_titulo">Crie sua conta</h2>
+            </div>
+
+            <div class="container-box">
+                <label class="label-input" for="usuario">Usuário</label>
+                <div class="container-input">
+                    <img src="assets/icons/user.png" alt="User Icon">
+                    <input type="text" id="usuario" placeholder="Usuário" required>
+                </div>
+            </div>
+
+            <div class="container-box">
+                <label class="label-input" for="email">Email</label>
+                <div class="container-input">
+                    <img src="assets/icons/email.png" alt="Email Icon">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="container-box">
+                <label class="label-input" for="senha">Senha</label>
+                <div class="container-input">
+                    <img src="assets/icons/cadeado.png" alt="Senha Icon">
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <img src="assets/icons/ocultar.png" class="icon-eye" alt="Mostrar senha">
+                </div>
+            </div>
+
+            <div class="container-btn-login">
+                <button type="submit" class="btn-login">Cadastrar</button>
+                <p>Já tem uma conta? <a class="link" href="login.html">Entrar</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('.icon-eye').addEventListener('click', function () {
+            const passwordInput = document.getElementById('senha');
+            const icon = this;
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.src = 'assets/icons/Mostrar.png';
+            } else {
+                passwordInput.type = 'password';
+                icon.src = 'assets/icons/ocultar.png';
+            }
+        });
+    </script>
+
+</body>
+</html>
