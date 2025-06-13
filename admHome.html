@@ -115,22 +115,22 @@
                 </button>
                 <form id="form-reserva">
                     <label for="nomeUser">Nome:</label>
-                    <input type="text" id="nomeUser" name="nomUser" required>
+                    <input type="text" id="nomeUser" name="nomUser" placeholder="Nome" required>
 
                     <label for="tipoUser">Tipo de Usuário:</label>
-                    <input type="text" id="tipoUser" name="tipoUser" required>
+                    <input type="text" id="tipoUser" name="tipoUser" placeholder="Aluno ou Professor" required>
 
                     <label for="cursoSetor">Curso/Setor:</label>
-                    <input type="text" id="cursoSetor" name="cursoSetor" required>
+                    <input type="text" id="cursoSetor" name="cursoSetor" placeholder="Ads ou Coordenação" required>
 
                     <label for="turno">Turno:</label>
-                    <input type="text" id="turno" name="turno" required>
+                    <input type="text" id="turno" name="turno" placeholder="Manhã ou Noite" required>
 
                     <label for="quantidade">Quantidade:</label>
-                    <input type="text" id="quantidade" name="quantidade" required>
+                    <input type="text" id="quantidade" name="quantidade" placeholder="5 Notebooks">
 
                     <label classe="descricao" for="descricao">Descrição:</label>
-                    <textarea id="descricao" name="descricao" class="descricao"></textarea>
+                    <textarea id="descricao" name="descricao" placeholder="Quero x notebooks para sala y ou reservar para amanha 9 notebooks" class="descricao"></textarea>
 
                     <label class="data" for="dataEntrega">Data de Entrega:</label>
                     <input type="date" id="dataEntrega" name="dataEntrega" required>
@@ -138,45 +138,54 @@
                     <button class="btn btn-dark" type="submit">Enviar Reserva</button>
                 </form>
         </dialog>
-    
-    </main>
 
-    <!--MODAL CHAT DE MENSSAGEM-->
-    <dialog class="dialog2" id="modal-2">
-        <div class="caixa-chat">
-            <div class="header-caixa-chat">
-                <img src="assets/img/Logo2.png" alt="Img">
-                <button class="modal-close">
-                    <img src="assets/icons/iconClose.png" alt="close">
-                </button>
-            </div>
-            <div class="mensagens">
-                <p>Olá, como posso ajudar?</p>
-                <p class="resposta">Olá, eu gostaria de fazer uma reserva de notebook</p>
-                <p>Ok, qual o seu nome?</p>
-                <p class="resposta">Meu nome é Fulano</p>
-            </div>
-            <div class="input-chat">
-                <input type="text" id="mensagem" name="mensagem" placeholder="Digite sua mensagem...">
-                <button class="btn btn-dark">Enviar</button>
-            </div>
-        </div>
-    </dialog>
-
-    <!--MODAL PERFIL-->
-    <dialog class="dialog3" id="modal-3">
-        <div class="caixa-perfil">
-            <P class="text-perfil" >Perfil</P>
+        <!--MODAL PERFIL-->
+        <dialog class="dialog3" id="modal-3" style="display: none;">
+            <div class="caixa-perfil">
+            <p class="text-perfil">Perfil</p>
             <div class="container-troca">
-                <p class="text-troca" >Usuario ADM</p>
+                <p class="text-troca">Usuario ADM</p>
                 <button class="btn btn-dark">Trocar</button>
             </div>
             <div class="container-sair">
                 <img class="sair" src="assets/icons/sairicon" alt="sair">
                 <a href="Login.html">Sair</a>
             </div>
-        </div>
-    </dialog>
+            </div>
+        </dialog>
+
+        </main>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const perfilIcon = document.querySelector(".Foto-Perfil");
+            const modalPerfil = document.getElementById("modal-3");
+
+            // Função para alternar visibilidade do modal
+            function toggleModalVisibility() {
+            if (modalPerfil.style.display === "none" || modalPerfil.style.display === "") {
+                modalPerfil.style.display = "block";
+            } else {
+                modalPerfil.style.display = "none";
+            }
+            }
+
+            // Evento para abrir o Modal de Perfil ao clicar no ícone
+            perfilIcon.addEventListener("click", function (event) {
+            event.stopPropagation(); 
+            toggleModalVisibility();
+            });
+
+            // Fecha o modal ao clicar fora dele
+            document.addEventListener("click", function (event) {
+            if (modalPerfil.style.display === "block" && !modalPerfil.contains(event.target) && event.target !== perfilIcon) {
+                modalPerfil.style.display = "none";
+            }
+            });
+        });
+        </script>
+    
+    
 
 </body>
 </html>

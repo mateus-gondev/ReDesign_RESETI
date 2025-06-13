@@ -24,11 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         abrirModal("modal-2");
     });
 
-    // Evento para abrir o Modal de Perfil (modal-3)
-    document.querySelector(".Foto-Perfil").addEventListener("click", function () {
-        abrirModal("modal-3");
-    });
-
     // Adiciona evento de fechar modal em todos os botões de fechar
     document.querySelectorAll(".modal-close").forEach((botao) => {
         botao.addEventListener("click", function () {
@@ -45,5 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 

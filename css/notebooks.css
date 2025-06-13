@@ -18,7 +18,7 @@
     margin-top: 0px; 
     padding: 20px;
     box-shadow: -8px 8px 0px rgba(0, 0, 0, 0.861);
-    background-color: #ffffff;
+    
     width: 17%;
     height: 20%;
     margin-top: 100px;
@@ -141,3 +141,22 @@
     background-color: #0056b3;
 }
 
+
+/* Estado normal */
+.btn-outline-primary {
+    border-radius: 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    width: 100px;
+    height: 45px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* Estado ativo */
+.btn-outline-primary.active {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
