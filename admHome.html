@@ -185,7 +185,17 @@
         });
         </script>
     
-    
+        <!--Redirecionar para Login-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const trocarButton = document.querySelector(".container-troca .btn.btn-dark");
+
+            // Evento para redirecionar ao clicar no botão "Trocar"
+            trocarButton.addEventListener("click", function () {
+                window.location.href = "Login.html";
+            });
+            });
+        </script>
 
 </body>
 </html>
